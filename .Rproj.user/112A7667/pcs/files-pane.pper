@@ -2,7 +2,7 @@
     "path" : "~/classproject",
     "sortOrder" : [
         {
-            "ascending" : true,
+            "ascending" : false,
             "columnIndex" : 2
         }
     ]
