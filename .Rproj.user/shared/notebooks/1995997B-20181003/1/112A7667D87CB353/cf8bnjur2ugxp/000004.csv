@@ -1,0 +1,13 @@
+"0","library(stringr)"
+"0","library(readr)"
+"0","studentID <- read_csv(""https://raw.githubusercontent.com/tpemartin/github-data/master/studentID.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¾Ç¸¹ = col_integer()
+)
+"
+"0","str_sub(studentID, start = 7, end = 11)"
+"1","[1]"
+"1"," ""77115"""
+"1","
+"

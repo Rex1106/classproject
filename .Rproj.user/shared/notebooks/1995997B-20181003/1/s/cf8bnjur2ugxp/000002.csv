@@ -1,3 +1,4 @@
+"0","library(stringr)"
 "0","library(readr)"
 "0","studentID <- read_csv(""https://raw.githubusercontent.com/tpemartin/github-data/master/studentID.csv"")"
 "2","Parsed with column specification:
