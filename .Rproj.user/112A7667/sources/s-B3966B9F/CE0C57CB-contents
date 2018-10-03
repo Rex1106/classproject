@@ -1,0 +1,9 @@
+---
+title: '201810.3'
+output: html_document
+---
+```{r}
+library(readr)
+studentID <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/studentID.csv")
+```
+
