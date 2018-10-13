@@ -119,4 +119,44 @@ lunch
 
 ```
 
+```{r}
+vector("numeric",4)
+c(d=2,f=3)
+x=c
+nchar(x)
+length(c(d=2,f=3))
+levels(student$出生地)
+class(student$出生地)
+as.character(student$出生地)
+x <- gl(2, 4, 8)
+levels(x)[1] <- "low"
+a<-"2017-01-31"
+class(a)
+library(dplyr)
+library(lubridate)
+a <- ymd("2017-01-31") 
+b <- ymd_hms("2017-01-31 20:11:59")
+a
+str_c(letters,LETTERS)
+str_c(letters,LETTERS,sep="-")
+str_c("lowercase: ", letters, ", capital: ", LETTERS)
+c(2L, 'a', 3.0, 4)
+x=c
+class(2L)
+class(c(2L, 'a', 3.0, 4))
+library(readr)
+student <- read_csv("https://raw.githubusercontent.com/tpemartin/course-107-1-programming-for-data-science/master/data/student.csv")
+head(student,10)
+gender <- c("男性", "男性", "女性", "男性", "女性", "男性")
+levels=c("男性", "男性", "女性", "男性", "女性", "男性")
+labels = c("Male", "Female")
+gender
+gender
+gender <- factor(x = gender, levels = c("男性", "女性"), labels = c("Male", "Female"))
+x
+colors <- c("red", "yellow", "green", "red", "green")
+colors.factor <- factor(colors)
+colors.factor
+```
+
 

@@ -1,0 +1,13 @@
+"0","gender <- factor(x = gender, levels = c(""男性"", ""女性""), labels = c(""Male"", ""Female""))
+"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","x"
+"1","function (...)  "
+"1",".Primitive(""c"")
+"
