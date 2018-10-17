@@ -1,0 +1,13 @@
+---
+title: 2018 10 17
+output: html_notebook
+---
+
+
+
+```{r}
+a=("A, B", "B, C")
+a
+str_split_fix(a,", ",n=3)=b
+b
+table(b)
