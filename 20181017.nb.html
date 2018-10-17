@@ -210,10 +210,62 @@ c</code></pre>
 [2,] &quot;B&quot;  &quot;C&quot;  &quot;&quot;  </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShnb29nbGVzaGVldHMpXG5nc19hdXRoKG5ld191c2VyID0gVFJVRSlcbmBgYCJ9 -->
+<pre class="r"><code>library(googlesheets)
+gs_auth(new_user = TRUE)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTm8gdG9rZW4gY3VycmVudGx5IGluIGZvcmNlLlxuQWRkaW5nIC5odHRyLW9hdXRoIHRvIC5naXRpZ25vcmVcbmh0dHB1diBub3QgaW5zdGFsbGVkLCBkZWZhdWx0aW5nIHRvIG91dC1vZi1iYW5kIGF1dGhlbnRpY2F0aW9uXG4ifQ== -->
+<pre><code>No token currently in force.
+Adding .httr-oauth to .gitignore
+httpuv not installed, defaulting to out-of-band authentication</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuNC9ld0NIbWEwYWRmSVloeXNVUUZ1STlDb2doLXlrS2NWU2Z0aXVPX1Bsa0FSeWRiSkpUZTZDVnkwXG5gYGAifQ== -->
+<pre class="r"><code>4/ewCHma0adfIYhysUQFuI9Cogh-ykKcVSftiuO_PlkARydbJJTe6CVy0</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ3NTdXJ2ZXk8LWdzX2tleShcIjFtQzlibnhqMTFOQ05vT0N3MFZtbjRueEVSYkh0TGplR285djlDOWIyR0RFXCIpICAjZG93bmxvYWQgc2hlZXQgaW5mb3JtYXRpb24gYXMgYW4gb2JqZWN0XG5gYGAifQ== -->
+<pre class="r"><code>gsSurvey&lt;-gs_key(&quot;1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE&quot;)  #download sheet information as an object</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiU2hlZXQgc3VjY2Vzc2Z1bGx5IGlkZW50aWZpZWQ6IFwipf6vWrNxsFS//SAoUmVzcG9uc2VzKVwiXG4ifQ== -->
+<pre><code>Sheet successfully identified: &quot;愼㸵昼㹥愼㹦Z戼㸳q戼㸰T戼㹦昼㹤 (Responses)&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3NTdXJ2ZXk8LWdzX3JlYWQoZ3NTdXJ2ZXksd3M9MSkgI2FjY2VzcyB0aGUgMXN0IHdvcmtzaGVldFxuYGBgIn0= -->
+<pre class="r"><code>classSurvey&lt;-gs_read(gsSurvey,ws=1) #access the 1st worksheet</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQWNjZXNzaW5nIHdvcmtzaGVldCB0aXRsZWQgJ0Zvcm0gUmVzcG9uc2VzIDEnLlxuIn0= -->
+<pre><code>Accessing worksheet titled 'Form Responses 1'.</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5Eb3dubG9hZGluZzogMi4xIGtCICAgICBcbkRvd25sb2FkaW5nOiAyLjEga0IgICAgIFxuRG93bmxvYWRpbmc6IDIuMSBrQiAgICAgXG5Eb3dubG9hZGluZzogMi4xIGtCICAgICBcbkRvd25sb2FkaW5nOiAyLjEga0IgICAgIFxuRG93bmxvYWRpbmc6IDIuMSBrQiAgICAgXG4ifQ== -->
+<pre><code>
+Downloading: 2.1 kB     
+Downloading: 2.1 kB     
+Downloading: 2.1 kB     
+Downloading: 2.1 kB     
+Downloading: 2.1 kB     
+Downloading: 2.1 kB     </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICBUaW1lc3RhbXAgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGBFbWFpbCBBZGRyZXNzYCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgqW2mVyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgvse4uSA9IGNvbF9pbnRlZ2VyKCksXG4gIKl+pu2mYabmrEawzyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgqcqnTyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgpbu+x7TBvsekwLzGID0gY29sX2ludGVnZXIoKSxcbiAgpbu+x7TBpdirZaR3sNGlW6SnvdKlfqyhsMogPSBjb2xfY2hhcmFjdGVyKClcbilcbiJ9 -->
+<pre><code>Parsed with column specification:
+cols(
+  Timestamp = col_character(),
+  `Email Address` = col_character(),
+  愼㸹m愼㸶W = col_character(),
+  戼㹥Ǹ戼㸹 = col_integer(),
+  愼㸹~愼㸶攼㹤愼㸶a愼㸶攼㸶愼㹣F戼㸰挼㹦 = col_character(),
+  愼㸹ʧO = col_character(),
+  愼㸵戼㹢戼㹥Ǵ挼㸱戼㹥Ǥ挼㸰戼㹣挼㸶 = col_integer(),
+  愼㸵戼㹢戼㹥Ǵ挼㸱愼㸵ثe愼㸴w戼㸰ѥ[愼㸴愼㸷戼㹤ҥ~愼㹣愼㸱戼㸰挼㹡 = col_character()
+)</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogMTAgMTcNCm91dHB1dDogaHRtbF9ub3RlYm9vaw0KLS0tDQoNCg0KDQpgYGB7cn0NCmE8LWMoIkEsIEIiLCJCLCBDIikNCmENCnN0cl9zcGxpdF9maXhlZChhLCIsICIsIG49MyktPmINCnN0cl9jKGIpLT5jDQpjDQp0YWJsZShiKQ0KYg0KDQpgYGANCg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogMTAgMTcNCm91dHB1dDogaHRtbF9ub3RlYm9vaw0KLS0tDQoNCg0KDQpgYGB7cn0NCmE8LWMoIkEsIEIiLCJCLCBDIikNCmENCnN0cl9zcGxpdF9maXhlZChhLCIsICIsIG49MyktPmINCnN0cl9jKGIpLT5jDQpjDQp0YWJsZShiKQ0KYg0KDQpgYGANCmBgYHtyfQ0KbGlicmFyeShnb29nbGVzaGVldHMpDQpnc19hdXRoKG5ld191c2VyID0gVFJVRSkNCmBgYA0KDQpgYGB7cn0NCmdzU3VydmV5PC1nc19rZXkoIjFtQzlibnhqMTFOQ05vT0N3MFZtbjRueEVSYkh0TGplR285djlDOWIyR0RFIikgICNkb3dubG9hZCBzaGVldCBpbmZvcm1hdGlvbiBhcyBhbiBvYmplY3QNCmNsYXNzU3VydmV5PC1nc19yZWFkKGdzU3VydmV5LHdzPTEpICNhY2Nlc3MgdGhlIDFzdCB3b3Jrc2hlZXQNCmBgYA0KDQo=</div>
 
 
 

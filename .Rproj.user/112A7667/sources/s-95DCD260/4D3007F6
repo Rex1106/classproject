@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539766064247.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4D3007F6",
+    "lastKnownWriteTime" : 3419473789575321445,
+    "last_content_update" : 1539766064247,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "320ad2e145b94029b3f41a6f0c09c02f",
+        "name" : "gsSurvey",
+        "title" : "gsSurvey"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}
