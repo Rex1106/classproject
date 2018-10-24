@@ -1,5 +1,5 @@
 ---
-title: "R Notebook"
+title: "2048 10 24"
 output: html_notebook
 ---
 
@@ -44,6 +44,10 @@ head(classSurvey)
 a<-c(T,T,F,F,T,F,F)
 sum(a)
 ```
+```{r}
+head(StuDF>=80)
+StuDF[StuDF$score>=80,2]
+StuDF[StuDF$name==小新,3]
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
 
