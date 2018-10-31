@@ -12,9 +12,9 @@
     "path" : null,
     "project_path" : null,
     "properties" : {
-        "cacheKey" : "969FA94C",
+        "cacheKey" : "F61EFC9D",
         "caption" : "student",
-        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=student&cache_key=969FA94C",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=student&cache_key=F61EFC9D",
         "displayedObservations" : "1057",
         "environment" : "",
         "object" : "student",
