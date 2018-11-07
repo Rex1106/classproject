@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1541576811813.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3F55207E",
+    "lastKnownWriteTime" : 32651522506817642,
+    "last_content_update" : 1541576811813,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "49D85BCA",
+        "caption" : "collegeData",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=collegeData&cache_key=49D85BCA",
+        "displayedObservations" : 838,
+        "environment" : "",
+        "object" : "collegeData",
+        "preview" : 0,
+        "totalObservations" : 838,
+        "variables" : 22
+    },
+    "relative_order" : 12,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
