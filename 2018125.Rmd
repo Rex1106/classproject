@@ -1,0 +1,61 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+library(readr)
+libraryData <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/library100_102.csv")
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+```{r}
+library(dplyr)
+library(lubridate)
+libraryData %>%
+  mutate(
+    學院=as.factor(學院),
+    書籍館藏地=as.factor(書籍館藏地),
+    書籍類別=as.factor(書籍類別),
+    借閱時間=ymd_hms(借閱時間,tz="Asia/Taipei")
+  ) -> libraryData
+```
+```{r}
+minMaxFun <- function(x){
+  max(x)-> maxNumber
+  min(x)-> minNumber
+  paste0("最大值： ",maxNumber, " 最小值： ",minNumber)
+}
+```
+```{r}
+not_numeric<-function(x){!is.numeric(x)}
+not_numeric(1)
+
+```
+```{r}
+libraryData %>%
+  select(讀者借閱冊數,書籍出版日期) 
+```
+```{r}
+libraryData %>%
+  summarise(
+    讀者平均借閱冊數=mean(讀者借閱冊數),
+    最小書籍出版日期=min(書籍出版日期),
+    最大書籍出版日期=max(書籍出版日期)
+  )
+```
+```{r}
+library(summarytools)
+libraryData %>%
+  select_if(
+    is.numeric
+  ) %>% summarytools::dfSummary() %>% summarytools::view(.)
+```
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
